@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rps.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+            
+            <div class="button-section">
+                <button onclick="playGame('rock');" class="move-button">
+                    <img src="images/rps_game/rock-emoji.png" class="move-icon">
+                </button>
+
+                <!--Paper-->
+                <button onclick="playGame('paper');" class="move-button">
+                    <img src="images/rps_game/paper-emoji.png" class="move-icon">
+                </button>
+                <!--Scissor-->
+                <button onclick="playGame('scissors');" class="move-button">
+                    <img src="images/rps_game/scissors-emoji.png" class="move-icon">
+                </button>
+            </div>
+            
+
+            <div class="result-section">
+                <p class="js-result result"></p>
+                <p class="js-moves"></p>
+                <p class="js-score score"></p>
+            </div>
+            
+            <div class="reset-button">
+                <button onclick="
+                score.win = 0;
+                score.losses = 0;
+                score.tie = 0;
+                localStorage.removeItem('score');
+                updateScoreElement();
+                " class="reset-score-button">Reset Score</button>
+            </div>
+    
+        </div>
+        
+    </div>
+         
+    <script src="scripts/rps_game.js"></script>
+</body>
+</html>

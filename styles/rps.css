@@ -1,0 +1,71 @@
+body {
+    background-color: #191919;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content {
+    display: block;
+    
+}
+.title, .button-section {
+    text-align: center;
+    
+}
+
+.move-icon {
+    height: 50px;
+}
+
+.move-button {
+    background-color: transparent;
+    border-color: white;
+    border: 3px solid white; /* width, style, color*/
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.move-button:hover {
+    background-color: rgb(83, 10, 126);
+}
+
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    margin-top: 60px;
+}
+.result-section {
+    text-align: center;
+}
+.reset-button {
+    text-align: center;
+}
+
+.reset-score-button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+    transition: background 0.5s;
+}
+.reset-score-button:hover {
+    background-color: rgb(83, 10, 126);
+    color: white;
+}

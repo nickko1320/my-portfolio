@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/29889a0982.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portfolio</title>
+</head>
+<body class="font-[Poppins] h-screen">
+    <header class="">
+        <nav class="flex justify-between items-center w-[80%] mx-auto">
+            <div>
+                <img class="w-20" src="images/logo_nicko.png" alt="">
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-white text-black md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-1xl">
+                    <li>
+                        <a class="nav-link" href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="header">
+            <div class="container mx-auto">
+                <div class="row">
+                    <div class="header-left">
+                        <p>Sample Portfolio</p>
+                        <h1>Hi, I'm Nicko</h1>
+                        <p class="intro-greet">
+                            I' am Computer Engineer, Software Engineer<br>aspirant. I love coding and web design.<br>Let's code with me.
+                        </p>
+                        <button>
+                            <a class="resume-file" href="images/Nicko Pagdanganan_CV.pdf" download>Download CV</a>
+                        </button>
+                        
+                        
+                        
+                        <div class="social-icon-logo">
+                            <a href="https://www.facebook.com/nicko.pagdanganan/"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/ickko_pgdngnn/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/nicko-pagdanganan-096118278/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="header-right">
+                        <img src="images/nicko_prof2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="about">
+            <div class="container mx-auto">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/nicko_pro1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>
+                            Hey, I'm Nicko, an aspiring developer. Passionate about coding and building innovative solutions. Eager to learn, grow, and contribute to the tech world. Let's code something awesome together!
+                        </p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UX/UI</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>UX/UI</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018 - 2023</span><br>Bachelor of Science in Computer Engineering at Bulacan State University</li>
+                                <li><span>2016 - 2018</span><br>Science Technology Engineering and Mathematics (STEM)at <br> La Consolacion Unversity Philippines</li>    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        
+
+        <div id="project">
+            <div class="container mx-auto">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/rps_game/rps_game.png">
+                        <div class="layer">
+                            <h3>Rock Paper Scissors Game</h3>
+                            <p>
+                                Engage in a classic game of Rock, Paper, Scissors. Dive into the interactive world of strategy and chance, challenging your skills against the computer.
+                            </p>
+                            <a href="rps_game.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/coin-flip.png">
+                        <div class="layer">
+                            <h3>Coin Flip Game</h3>
+                            <p>
+                                Experience the thrill of a digital coin flip. This engaging game adds an element of fun to decision-making. A quick and entertaining way to make choices and leave things to chance!
+                            </p>
+                            <a href="coin-flip.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/todo-list.png">
+                        <div class="layer">
+                            <h3>Todo List App</h3>
+                            <p>
+                                Stay organized effortlessly. Our Todo List app simplifies task management, allowing you to create, organize, and check off your to-dos with ease. Effortless productivity at your fingertips.
+                            </p>
+                            <a href="todo-list.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
+        <div id="technology-section">
+            <div class="container mx-auto">
+                <h1 class="sub-title">Technologies</h1>
+                <div class="tech-section">
+                    <div class="cPlus-logo">
+                        <img src="images/c++_logo.png" alt="">
+                    </div>
+                    <div class="html-logo">
+                        <img src="images/html_logo.png" alt="">
+                    </div>
+                    <div class="css-logo">
+                        <img src="images/css-logo.png" alt="">
+                    </div>
+                    <div class="js-logo">
+                        <img src="images/js-logo.png" alt="">
+                    </div>
+                    <div class="python-logo">
+                        <img src="images/python_logo.png" alt="">
+                    </div>
+                    <div class="django-logo">
+                        <img src="images/django_logo.png" alt="">
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        
+
+        <div id="contact">
+            <div class="container mx-auto">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact</h1>
+                        <p>
+                            <i class="fa-solid fa-paper-plane"></i>pagdanganan.nicko@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-square-phone"></i>0949-716-8151
+                        </p>
+                        <div class="social-icon-logo">
+                            <a href="https://www.facebook.com/nicko.pagdanganan/"><i class="fa-brands fa-square-facebook"></i></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/ickko_pgdngnn/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/nicko-pagdanganan-096118278/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <br>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="bg-neutral-900 text-white p-4 mt-auto">
+        <div class="container mx-auto text-center">
+          <p class="text-sm">&copy; 2024 Nicko. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[0%]')
+        }
+    </script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!--this script is for contact form-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLkgSoFVHP-l7n2sx5G0OUIjNnIZi_tjmsuqlDK-EUcoQgBTH--R-bKfJJ8StKXQT1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message send successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    
+  
+</body>
+</html>

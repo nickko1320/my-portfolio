@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/coin-flip.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Coin Flip Game</title>
+</head>
+<body>
+    <h1>Coin Flip Game</h1>
+    <div id="moves-section">
+        <div id="player-section">
+            <p>Player's Move: <span id="playerMove"></span></p>
+            <img id="playerImage" src="" alt="Player's Image">
+        </div>
+        <div id="computer-section">
+            <p>Computer's Move: <span id="computerMove"></span></p>
+            <img id="computerImage" src="" alt="Computer's Image">
+        </div>
+    </div>
+
+    <button onclick="playGame('heads');">Heads</button>
+    <button onclick="playGame('tails');">Tails</button>
+
+    <div id="coin-section">
+    <p>Coin Flip Result: <span id="coinFlipResult"></span></p>
+    <img id="coinImage" src="" alt="Coin Image">
+    </div>
+
+    <p id="outcome"></p>
+
+    <div id="score-section">
+    <p>Wins: <span id="winCount">0</span></p>
+    <p>Losses: <span id="lossCount">0</span></p>
+    <p>Ties: <span id="tieCount">0</span></p>
+
+    <button id="reset-button" onclick="resetScore();">Reset Score</button>
+
+
+    <script src="scripts/coin-flip.js"></script>
+
+</body>
+</html>
