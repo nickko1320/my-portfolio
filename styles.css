@@ -234,7 +234,7 @@ html {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: white;
     transition: height 0.5s;
 }
